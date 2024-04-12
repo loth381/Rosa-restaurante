@@ -82,7 +82,7 @@ const food = fooditem.map(item => {
             <img src="${item.foodimg}" width="300" height="300" loading="lazy"
             alt="" class="w-100">
             <div class="badge">-15%</div>
-            <button class="btn food-menu-btn" onclick="orderNow('${item.FoodName}', '${item.foodimg}')" >Order Now</button>
+            <button class="btn food-menu-btn" onclick="orderNow('${item.FoodName}', '${item.foodimg}')" >Ordenar</button>
         </div>
         <div class="wrapper">
                 
