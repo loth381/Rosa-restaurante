@@ -1,83 +1,71 @@
+//Menu
+
 let foodContainer = document.querySelector('.food-container');
 
 const fooditem=[
     {
-        FoodName: "Cheese paratha",
-        foodimg: 'images/food-menu-1.png',
-        price: "RS 250",
-        type: "breakFast",
-        des: "These cheese flatbreads make for a wholesome breakfast or brunch. There are many many varieties of paratha made and this is one such tasty paratha which the kids are going to love."
+        FoodName: "Lomo Saltado",
+        foodimg: 'images/menu1.jpg',
+        price: "S/7",
+        type: "Menu",
+        des: "",
     },
     {
-        FoodName: "Aloo Paratha",
-        foodimg: 'images/food-menu-2.png',
-        price: "RS 200",
-        type: "breakFast",
+        FoodName: "Papa ala Huacaina",
+        foodimg: 'images/menu2.png',
+        price: "S/7",
+        type: "Menu",
         des: "Aloo Paratha is a bread dish originating from the Indian subcontinent. It is a breakfast dish originated from the Punjab region."
     },
     {
-        FoodName: "Egg Paratha",
-        foodimg: 'images/food-menu-3.png',
-        price: "RS 150",
-        type: "breakFast",
+        FoodName: "Jugo de Papaya",
+        foodimg: 'images/jugopapaya.png',
+        price: "S/5",
+        type: "Jugos",
         des: "Egg paratha recipe — easy breakfast, brunch or dinner recipe that is protein rich, healthy and tasty. Egg paratha is a kids' favorite, so i make it often for their after school snack. To make egg paratha, you can use ready paratha, roti or frozen paratha as well."
     },
     {
-        FoodName: "Daal Chawal",
-        foodimg: 'images/l1.jpg',
-        price: "RS 400",
-        type: "Lunch",
+        FoodName: "Jugo de Fresa",
+        foodimg: 'images/jugofresa.png',
+        price: "S/5",
+        type: "Jugos",
         des: "The most fascinating, fabulously fantastic and simple lightweight Pakistan’s most favorite dish, Daal Chawal Recipe (Daal Rice) is here at Sooperchef.pk. It’s simple, fast and delicious Pakistani Recipe."
     },
     {
-        FoodName: "Pakal Paneer",
-        foodimg: 'images/l2.jpg',
-        price: "RS 400",
-        type: "Lunch",
+        FoodName: "Jugo Especial",
+        foodimg: 'images/jugoespecial.png',
+        price: "S/5",
+        type: "Jugos",
         des: "Palak Paneer is a popular Indian dish of Indian cottage cheese cubes in a mild, spiced smooth spinach sauce. This delicious creamy dish is made with fresh spinach leaves, paneer (firm cottage cheese), onions, tomatoes, herbs and spices."
     },
     {
-        FoodName: "Aloo Ghobi",
-        foodimg: 'images/l3.jpg',
-        price: "RS 200",
-        type: "Lunch",
+        FoodName: "Jugo de Platano",
+        foodimg: 'images/jugoplatano.png',
+        price: "S/4",
+        type: "Jugos",
         des: "Aloo Gobi ki Sabzi is a classic Pakistani dish of Potatoes and Cauliflower cooked in savory spices and garnished with chillies and cilantro."
     },
     {
-        FoodName: "Aloo Goshat",
-        foodimg: 'images/l4.jpg',
-        price: "RS 200",
-        type: "Lunch",
+        FoodName: "Jugo Verde",
+        foodimg: 'images/jugoverde.png',
+        price: "S/3",
+        type: "Jugos",
         des: "Aloo Gosht is a spicy, thick and creamy meat gravy that originates from Pakistani and North Indian cuisine.This gravy has potatoes cooked with lamb or mutton in a thick stew."
     },
 
     {
-        FoodName: "Banana Shakes",
-        foodimg: 'images/s1.jpg',
-        price: "RS 150",
-        type: "Shakes",
+        FoodName: "Jugo DXN",
+        foodimg: 'images/jugodxn.png',
+        price: "S/2",
+        type: "Jugos",
         des: "You need less than five minutes to make this easy banana smoothie. Use our simple recipe on it’s own or use it as a base for other smoothies."
     },
+  
     {
-        FoodName: "Mango Shakes",
-        foodimg: 'images/s2.jpg',
-        price: "RS 150",
-        type: "Shakes",
-        des: "Mango shake is a cool and tempting fruit drink prepared by simply blending ripe mango pieces, milk and sugar. To keep things simple and easy, this recipe primarily explains how to make mango shake with milk."
-    },
-
-    {
-        FoodName: "Biryani",
-        foodimg: 'images/d1.jpg',
-        price: "RS 600",
-        type: "Dinner",
-        des: "Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent. It is made with Indian spices, rice, and meat, and sometimes, in addition, eggs and/or vegetables such as potatoes in certain regional varieties."
-    },
-    {
-        FoodName: "Korma",
-        foodimg: 'images/d2.jpg',
-        price: "RS 250",
-        type: "Dinner",
+        FoodName: "DXN",
+        foodimg: 'images/dxn.png',
+        price: "",
+        type: "Productos",
         des: "Korma is a gravy dish that is usually made with yogurt, lots of nuts and spices. A Mughal era original, Chicken Korma is the perfect dinner party dish that is easy, quick and a no fuss recipe."
     }
 ]
@@ -97,7 +85,7 @@ const food = fooditem.map(item => {
             <button class="btn food-menu-btn" onclick="orderNow('${item.FoodName}', '${item.foodimg}')" >Order Now</button>
         </div>
         <div class="wrapper">
-                <p class="category">Chicken</p>
+                
                 <div class="rating-wrapper">
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
@@ -107,14 +95,14 @@ const food = fooditem.map(item => {
                 </div>
                 </div>
                 <h3 class="h3 card-title">${item.FoodName}</h3>
-                <div class="price-wrapper">
 
-                  <p class="price-text">Price:</p>
+               
+                <div class="price-wrapper">
+                      
+                  <p class="price-text">Precio:</p>
 
                   <data class="price">${item.price}</data>
-
-                  <del class="del" value="69.00">$69.00</del>
-                  
+                   
                 <div class="des my-3 ">
                   <!-- <p>${item.des}</p>-->
             </div>
@@ -142,29 +130,29 @@ menu.forEach(m => {
             {
                 box.classList.remove('d-none')
             }
-            else if(e.target.innerHTML==='Jugos'){
-                if(box.classList.contains('breakFast'))
+            else if(e.target.innerHTML==='Menu'){
+                if(box.classList.contains('Menu'))
                 {
                     box.classList.remove('d-none')
                 }
                 
             }
-            else if(e.target.innerHTML==='Tienda'){
-                if(box.classList.contains('Lunch'))
+            else if(e.target.innerHTML==='Jugos'){
+                if(box.classList.contains('Jugos'))
                 {
                     box.classList.remove('d-none')
                 }
                 
             }
             else if(e.target.innerHTML==='Bebidas'){
-                if(box.classList.contains('Shakes'))
+                if(box.classList.contains('Bebidas'))
                 {
                     box.classList.remove('d-none')
                 }
                 
             }
-            else if(e.target.innerHTML==='Almuerzos'){
-                if(box.classList.contains('Dinner'))
+            else if(e.target.innerHTML==='Productos'){
+                if(box.classList.contains('Productos'))
                 {
                     box.classList.remove('d-none')
                 }
@@ -174,6 +162,10 @@ menu.forEach(m => {
         
     })
 })
+
+
+
+ //Wsp
 function orderNow(productName, productImage) {
     const waNumber = '51930134408'; // Número de WhatsApp de la empresa
     const waMessage = `Hola, me gustaría ordenar: *${productName}*`;
@@ -185,3 +177,13 @@ function orderNow(productName, productImage) {
     window.open(waImageUrl, '_blank');
   }
 
+
+
+
+
+  //mapa
+  function openMap() {
+    var mapContainer = document.getElementById('map-container');
+    mapContainer.style.display = 'block';
+    window.open('https://www.google.com/maps/embed?pb=!4v1712906948468!6m8!1m7!1sg3BMEpYk4UPVOJm2g6U-LQ!2m2!1d-13.15225165518377!2d-74.20667832713457!3f330.78978726375647!4f-41.437135972356806!5f0.7820865974627469', '_blank');
+  }

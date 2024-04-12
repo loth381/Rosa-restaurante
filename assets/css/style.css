@@ -224,6 +224,9 @@ body.active { overflow: hidden; }
 
 .h4 { font-size: var(--fs-3); }
 
+
+
+
 .btn {
   background-color: #AECF2B;
   color: var(--white);
@@ -250,7 +253,7 @@ body.active { overflow: hidden; }
   height: 1px;
   transform: translate(-50%, 51%) scale(var(--scale, 1));
   border-radius: 50%;
-  background-color: var(--rich-black-fogra-29);
+  background-color:#BCCCBC;
   z-index: -1;
   transition: var(--transition-2);
 }
@@ -310,7 +313,7 @@ body.active { overflow: hidden; }
 
 .section-title > .span {
   display: inline-block;
-  color: var(--deep-saffron);
+  color: #AECF2B;
 }
 
 .abs-img {
@@ -344,7 +347,7 @@ body.active { overflow: hidden; }
 .rating-wrapper {
   display: flex;
   gap: 5px;
-  color: var(--deep-saffron);
+  color: #aecf2b;
 }
 
 
@@ -389,6 +392,7 @@ color: black;
   align-items: center;
 }
 
+
 .logo {
   color: black;
   font-family: var(--ff-rubik);
@@ -401,7 +405,7 @@ color: black;
 
 .logo .span {
   display: inline-block;
-  color: var(--deep-saffron);
+  color: #AECF2B;
 }
 
 .header-btn-group {
@@ -473,7 +477,7 @@ color: black;
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--dark-orange); }
+.navbar-link:is(:hover, :focus) { color: #AECF2B; }
 
 
 
@@ -595,6 +599,13 @@ color: black;
 /*-----------------------------------*\
   #PROMO
 \*-----------------------------------*/
+.promo-card-cta {
+
+  text-align: center;
+  
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
 
 .promo-card {
   position: relative;
@@ -692,7 +703,7 @@ color: black;
 .about-item:not(:last-child) { margin-block-end: 10px; }
 
 .about-item ion-icon {
-  background-color: var(--deep-saffron);
+  background-color: #AECF2B;
   color: var(--white);
   font-size: 1.2rem;
   padding: 4px;
@@ -767,7 +778,7 @@ color: black;
 
 .food-menu-card .card-banner {
   position: relative;
-  padding-block-start: 30px;
+  padding-block-start: 75px;
   max-width: max-content;
   aspect-ratio: 1 / 1;
   margin-inline: auto;
@@ -825,12 +836,12 @@ color: black;
 }
 
 .food-menu-card .price-text {
-  color: var(--cinnabar);
+  color: #aecf2b;
   text-transform: uppercase;
   padding-inline-end: 5px;
 }
 
-.food-menu-card .price { color: var(--deep-saffron); }
+.food-menu-card .price { color:#aecf2b ; }
 
 .food-menu-card .del { color: var(--gray-x-11-gray); }
 
@@ -1206,7 +1217,7 @@ color: black;
 }
 
 .social-link {
-  background-color: var(--dark-orange);
+  background-color: #AECF2B;
   color: var(--white);
   font-size: 1.5rem;
   padding: 10px;
@@ -1232,10 +1243,10 @@ color: black;
   top: 50%;
   transform: translateY(-50%);
   left: calc(100% + 15px);
-  background-color: var(--deep-saffron);
+  background-color: #AECF2B;
   width: 40px;
   height: 4px;
-  border-inline-end: 5px solid var(--deep-saffron);
+  border-inline-end: 5px solid #AECF2B;
   box-shadow: inset -5px 0 0 var(--white);
 }
 
@@ -1304,7 +1315,7 @@ textarea.input-field {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--deep-saffron);
+  background-color: #AECF2B;
   color: var(--white);
   padding: 15px;
   border-radius: 50%;
@@ -1349,9 +1360,20 @@ textarea.input-field {
 .logo {
   font-size: 25px;
 }
+
+
+.promo-card-cta{
+  padding: 40px;
+}
+
  }
 
+ @media (max-width: 780px) {
 
+  .navbar-link {
+    color: black;
+  }
+  }
 
 
 
@@ -1370,7 +1392,7 @@ textarea.input-field {
     display: block;
     --bg-color: var(--dark-orange);
   }
-  
+ 
 
 }
 
@@ -1439,9 +1461,9 @@ textarea.input-field {
     display: grid;
     position: absolute;
     z-index: 1;
-    color: var(--gold-crayola);
+    color: white;
     font-size: 2.4rem;
-    border: 1px solid var(--gold-crayola);
+    border: 1px solid white;
     width: 45px;
     height: 45px;
     place-items: center;
@@ -1458,7 +1480,7 @@ textarea.input-field {
 
   .hero .slider-btn:is(:hover, :focus-visible) {
     background-color: var(--gold-crayola);
-    color: var(--black);
+    color: white;
   }
 
 
@@ -1501,9 +1523,9 @@ textarea.input-field {
 
   .cta .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    gap: 30px;
+    gap:100px;
   }
 
   .cta { text-align: left; }
